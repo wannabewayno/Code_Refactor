@@ -164,34 +164,38 @@ is listed under the grid as it contains other elements */
     height: auto;
     object-fit: contain;
 }
-
+/* properties of the footer */
 .footer {
     font-size: 20px;
-    position: relative;
-    top:50px;
     padding: 30px;
     display: block;
     text-align: center;
 }
+/* move background-image down by 50px to clear the header, grid and footer are then moved down to clear the image */
+.background-image, .grid, .footer {
+    position: relative; 
+    top:50px;
+}
 
+/* for mobile compatibility and screen resizing, reduces font-size, centers items*/
 @media screen and (max-width: 1130px) {
-    .header{
+    .header, h1, p, .articlebox h2{
         text-align: center;
     }
     .header nav{
         width:100%
     }
-    .header h1 {
-        text-align: center;
-    }
-
-    .sectionbox h2{
+    .articlebox h2{
         font-size: 24px;
     }
-    .content-img{
-        max-height: 150px;
+    .flexbox{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .main-img{
+        max-height: 175px;
     }
     p {
         font-size:16px;
     }
-  } 
+}
