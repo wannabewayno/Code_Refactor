@@ -96,70 +96,66 @@ is listed under the grid as it contains other elements */
     "bottom sidebar";
     object-fit: contain;
 }
-
-.contentbox {
+/* arranging <article> tags and <img> tags in a flexbox for presentation and scaling */
+.flexbox {
     padding: 50px;
     height: 100%;
     background-color: #0072bb;
-    display: inline-flex;
+    display: flex;
     flex-wrap: nowrap;
     align-items: center;
 }
-
-.sectionbox {
-    width: 100%;
+/* arranging content inside articles to a flexbox */
+.articlebox {
     height: auto;
     color: #ffffff;
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     order:2;   
 }
-
-.sectionbox h2 {
+/* <h2>'s inside sections given a margin to clear <p> tags with font size increased for impact and read-ability,*/
+.articlebox h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
-
-.content-img{
+/* properties of images inside main tags (main content areas) */
+.main-img{
     display:block;
     padding: 20px;
-    max-height: 200px;
+    max-height: 250px;
 }
-
+/* moves anything with this class left inside a flex box */
 .move-left {
     order:1;
 }
-
+/* moves anything with this class right inside a flex box */
 .move-right {
     order:3;
 }
-
-.sidebar {
-    grid-area:sidebar;
+/* defining the sidebar and sections inside the sidebar, content inside the sections and the sections themselves
+ are both similarly arranged */
+.sidebar, .sidebarsection{
     padding: 20px;
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+/* properties unique to the sidebar */
+.sidebar {
     width: 100%;
     height: 100%;
     background-color: #0072bb;
-    display:flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
 }
-
-.sidebar>section {
+/* properties unique to the sections inside the sidebar */
+.sidebarsection {
     text-align: center;
-    padding: 20px;
     color: #ffffff;
-    display:flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
     justify-content: center;
-    align-content: center;
-    align-items: center;
 }
-
+/* properties of images inside the sidebar */
 .sidebar-img {
     display:block;
     max-width: 200px;
