@@ -31,4 +31,4 @@ All refactored code can be found in this github repo,
 to see the website running live. 
 Please visit
 
-#### [Horiseon's Website!](horiseon.business)
+#### ![Horiseon's Website](horiseon.business)
