@@ -8,7 +8,7 @@ body {
     background-color: #d9dcd6;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
+/* properties of the header, logo and nav buttons to display in a banner of a chosen colour.  */
 .header {
     position: fixed;
     padding:10px 20px;
@@ -21,24 +21,24 @@ body {
     align-content:flex-end;
     z-index: 2;
 }
-
+/* defining the logo size and colour, setting flex-grow to 2 to set it apart from the navigation options */
 .header h1 {
     font-size: 48px;
     color: #ffffff;
     flex-grow: 2;
 }
-
+/* the letters "SEO" in the main company logo will have a darker shaded colour for impact */
 .seo {
     color: #d9dcd6;
 }
-
+/* arranges nagigation buttons in a flex box for spacing and smooth scaling when the window is changed */
 .header nav {
     width:auto;
     display: inline-flex;
     align-items: baseline;
     justify-content: space-evenly;
 }
-
+/* defining the navigation buttons' colour, size and padding */
 .header>nav>a {
     color: #ffffff;
     text-decoration: none;
@@ -46,7 +46,7 @@ body {
     font-size: 22px;
     flex-grow: 1;
 }
-
+/* when hovering over navigation links at the top, the background will change colour to resemble a button */
 .header>nav>a:hover {
     background-color:#145271;
     border-radius: 10px;
@@ -57,8 +57,6 @@ p {
 }
 
 .background-image {
-    position: relative; 
-    top:50px;
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
@@ -67,7 +65,8 @@ p {
     background-position:center;
     z-index: 1;
 }
-
+/* defining grid areas as classes to be applied to html elements, note: the sidebar element
+is listed under the grid as it contains other elements */
 .top{
     grid-area:top;
 }
@@ -80,9 +79,11 @@ p {
     grid-area:bottom;
 }
 
+.sidebar{
+    grid-area: sidebar;
+}
+/* defining the grid using the pre-defined grid areas above */
 .grid {
-    position: relative;
-    top:50px;
     width: 100%;
     display: grid;
     grid-template-columns: 74.5% 24.5%;
