@@ -29,6 +29,6 @@ By modifying the source code, several key accessilbilty standards were acheived 
 
 All refactored code can be found in this github repo,
 to see the website running live. 
-Please visit
 
-#### ![Horiseon's Website](horiseon.business)
+
+Please visit **[Horiseon's Website](horiseon.business)**
