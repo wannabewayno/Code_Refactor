@@ -20,6 +20,7 @@ By modifying the source code, several key accessilbilty standards were acheived 
     * Further modifcation by semanticaly renaming classes that reflected the style of the HTML structure to further increase readability of the code. 
     * Additonal code was put in place to enhance the aesthetics of the site. This allowed the style of the website to be responsive independant of browser size, whilst still retaining the original design and feel of the source code.
     * All images were given appropriate and descriptive alt attributes
+    * An Eric Meyers CSS reset was added to the repo for browser compatibility
 * #### Company Marketing
     * Adding to the website, a more engaging title was used to set the site apart from it's competitors.
     * A title description was used to add context and draw in readers.
